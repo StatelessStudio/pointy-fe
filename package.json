@@ -1,0 +1,25 @@
+{
+	"name": "pointy-fe",
+	"version": "0.0.1",
+	"author": "stateless-studio",
+	"license": "MIT",
+	"scripts": {
+		"start": "tsc --p tsconfig.json",
+		"build": "tsc --p tsconfig.json",
+		"build:spec": "tsc --p tsconfig.json && tsc --p tsconfig.spec.json",
+		"postinstall": "tsc --p tsconfig.dist.json",
+		"test": "npm run build:spec && jasmine --config=test/jasmine.json",
+		"doc": "typedoc --out docs src --excludeNotExported"
+	},
+	"dependencies": {
+		"@types/jasmine": "^3.3.4",
+		"@types/node": "^10.12.18",
+		"jasmine": "^3.3.1"
+	},
+	"main": "./index.js",
+	"types": "./index.d.ts",
+	"devDependencies": {
+		"ts-node": "^7.0.1",
+		"typedoc": "^0.13.0"
+	}
+}

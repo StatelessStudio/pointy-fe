@@ -1,2 +1,3 @@
-# pointy-fe
-PointyAPI Front End Framework
+# Pointy FE
+
+PointyAPI Front-End Framework
