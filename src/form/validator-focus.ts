@@ -1,15 +1,13 @@
+declare var document;
+
 export function validatorFocus(selector: string) {
-	var document;
+	try {
+		if (document) {
+			const invalidFields = document.querySelectorAll(selector);
 
-	if (document) {
-		const invalidFields = document.querySelectorAll(selector);
-
-		if (
-			invalidFields &&
-			invalidFields.length &&
-			'focus' in invalidFields[0]
-		) {
-			invalidFields[0]['focus']();
+			if (invalidFields && invalidFields.length) {
+				invalidFields[0]['focus']();
+			}
 		}
-	}
+	} catch (ex) {}
 }
