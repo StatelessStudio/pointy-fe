@@ -1,5 +1,11 @@
 # PointyFE Changelog
 
+## [0.1.1] - Dec-23-2018
+
+### Fixes
+
+- Fixed validatorFocus()
+
 ## [0.1.0] - Dec-23-2018
 
 ### Additions
