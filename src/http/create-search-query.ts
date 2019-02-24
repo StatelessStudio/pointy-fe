@@ -7,15 +7,17 @@ export function createSearchQuery(
 ) {
 	const query = {};
 
-	query['__search'] = search ? search : '';
+	if (search) {
+		query['search'] = search;
+	}
 
 	if (sort && order) {
-		query['__orderBy[' + sort + ']'] = order.toUpperCase();
+		query['orderBy[' + sort + ']'] = order.toUpperCase();
 	}
 
 	if (pageNo >= 0 && nPerPage) {
-		query['__offset'] = pageNo && nPerPage ? pageNo * nPerPage : 0;
-		query['__limit'] = nPerPage;
+		query['offset'] = pageNo && nPerPage ? pageNo * nPerPage : 0;
+		query['limit'] = nPerPage;
 	}
 
 	return query;

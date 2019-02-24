@@ -7,7 +7,7 @@ describe('createSearchQuery()', () => {
 		let result = createSearchQuery('test');
 
 		expect(result).toEqual(jasmine.any(Object));
-		expect('__search' in result).toBe(true);
-		expect(result['__search']).toEqual('test');
+		expect('search' in result).toBe(true);
+		expect(result['search']).toEqual('test');
 	});
 });

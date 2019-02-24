@@ -1,5 +1,10 @@
 # PointyFE Changelog
 
+## [0.1.2] - Feb-24-2019
+
+### Updates
+- Updated `createSearchQuery()` for use with PointyAPI v1
+
 ## [0.1.1] - Dec-23-2018
 
 ### Fixes
