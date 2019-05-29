@@ -1,5 +1,16 @@
 # PointyFE Changelog
 
+## [0.2.0] - May-29-2019
+
+### Additions
+
+- Added parent parameter to validatorFocus()
+
+### Fixes
+
+- Added Stateless Studio credit
+- Updated dependencies
+
 ## [0.1.2] - Feb-24-2019
 
 ### Updates
