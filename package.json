@@ -17,5 +17,8 @@
 		"jasmine": "^3.4.0"
 	},
 	"main": "./index.js",
-	"types": "./index.d.ts"
+	"types": "./index.d.ts",
+	"devDependencies": {
+		"typescript": "^3.4.5"
+	}
 }
