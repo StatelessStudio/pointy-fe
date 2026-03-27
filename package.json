@@ -14,7 +14,7 @@
 	"dependencies": {
 		"@types/jasmine": "^3.3.13",
 		"@types/node": "^10.14.7",
-		"jasmine": "^3.4.0"
+		"jasmine": "^3.6.1"
 	},
 	"main": "./index.js",
 	"types": "./index.d.ts",
